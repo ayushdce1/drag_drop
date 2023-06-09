@@ -98,6 +98,7 @@ for(i=0;i<total_child;i++){
       //   document.getElementsByClassName("target_files")[0].firstChild.remove();
       // }
       // catch(err){alert(err.message);}
+      document.getElementsByClassName("confirmation_wrap")[0].classList.remove("display_block");
 
     }
     else if(source_id - document.getElementsByClassName("files")[0].children[i].id == -1){
@@ -105,10 +106,12 @@ for(i=0;i<total_child;i++){
       //document.getElementsByClassName("files")[0].prepend(tobe_inserted);
       try{append_location.insertAfter(append_location,tobe_inserted);}
       catch(err){err.message;}
+      document.getElementsByClassName("confirmation_wrap")[0].classList.remove("display_block");
     }
     else{
       // document.getElementsByClassName("files")[0].prepend(document.getElementsByClassName("target_files")[0].firstChild);
       console.log("else part");
+      document.getElementsByClassName("confirmation_wrap")[0].classList.remove("display_block");
     }
 }
 

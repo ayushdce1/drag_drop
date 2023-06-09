@@ -151,3 +151,7 @@
 .reset_wrap{
 	margin-top:10px;
 }
+
+.confirmation_buttons a:nth-child(3) {
+    background-color: green;
+}
