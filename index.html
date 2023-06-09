@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Drag & Drop - Javascript</title>
+	<link rel="stylesheet" type="text/css" href="file.css">
+</head>
+<body>
+
+<div class="confirmation_wrap">
+	<div class="confirmation_wrap_inside">
+
+		<div class="confirmation_content">
+			<p id="confirmation"></p>
+			<div class="confirmation_buttons">
+				<a id="save">Save</a><a id="revert">Revert</a>
+			</div>
+			
+		</div>
+
+	</div>
+	
+</div>
+
+<div class="wrap box_shadow">
+	
+	<div class="wrap_inside box_shadow">
+		
+		<div class="wrap_left box_shadow">
+			<div class="wrap_left_inside box_shadow">
+				
+				<div class="files">
+								
+				</div>
+
+			</div>
+			<div class="reset_wrap">
+				<a href="#" onclick="reset();" class="reset_button">RESET</a>
+				<a href="#" onclick="empty();" class="reset_button">EMPTY</a>
+				<a href="#" onclick="add_files();" class="reset_button">ADD</a>
+			</div>
+		</div>
+		<div class="wrap_right box_shadow">
+			<div id="target_div" class="wrap_right_inside box_shadow" ondrop="drop(event)" ondragover="allowDrop(event)">
+				<div class="target_files">
+								
+				</div>
+			</div>
+			<div class="reset_wrap">
+				<a href="#" onclick="empty_right();" class="reset_button">EMPTY</a>
+			</div>
+		</div>
+		
+	</div>
+</div>
+
+
+
+<script type="text/javascript" src="file.js"></script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+.box_shadow{
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.wrap{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100vw;
+}
+.wrap_inside{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	gap: 30px;
+	padding: 20px;
+}
+.wrap_left{
+	padding: 20px;
+}
+.wrap_left_inside{
+	padding: 10px;
+	height: 50vh;
+	width: 40vw;
+	overflow: auto;
+}
+.wrap_right{
+	padding: 20px;
+}
+.wrap_right_inside{
+	padding: 10px;
+	height: 50vh;
+	width: 40vw;
+	overflow: auto;
+}
+.left_files{
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+.right_files{
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.file_item{
+	display: flex;
+	padding: 10px;
+	align-items: center;
+}
+
+.file_item_img_wrap{
+	width: 14%;
+}
+
+.file_item_img_wrap img{
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+.file_item_content_wrap{
+	flex-grow: 1;
+	height: 14%;
+}
+.file_item_content_wrap > div{
+	padding: 5px;
+}
+.bold{
+	font-weight: bold;
+}
+.files,.target_files {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.confirmation_wrap{
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	right: 0;
+	bottom: 0;
+	background-color: transparent;
+}
+.display_block{
+	display: block!important;
+}
+
+.confirmation_wrap.display_block + .wrap{
+	filter: blur(5px);
+	pointer-events: none;
+}
+
+.confirmation_wrap_inside{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	width: 100vw;
+}
+.confirmation_content{
+	background-color: #ddd;
+	width: 20%;
+	height: 15%;
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 10px;
+	z-index: 9;
+
+}
+.confirmation_buttons{
+	display: flex;
+	gap: 10px;
+}
+
+.confirmation_buttons a{
+	padding: 10px 20px;
+	color: #fff;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.confirmation_buttons a:nth-child(1){
+	background-color: orange;
+}
+
+.confirmation_buttons a:nth-child(2){
+	background-color: blue;
+}
+#target_div{
+	position: relative;
+}
+.reset_button{
+	padding: 5px 8px;
+	background-color: orange;
+	color: #fff;
+	border-radius: 5px;
+	text-decoration: none;
+}
+.reset_wrap{
+	margin-top:10px;
+}
