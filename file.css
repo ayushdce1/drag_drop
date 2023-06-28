@@ -155,3 +155,7 @@
 .confirmation_buttons a:nth-child(3) {
     background-color: green;
 }
+
+@media only screen and (max-width:600px){
+	
+}
